@@ -1,0 +1,117 @@
+*{
+    margin: 0; /*Elimino el margin de los navegadores*/
+    padding: 0; /*Elimino el padding de los navegadores*/
+    box-sizing: border-box; /*Le digo que el tamaño sea tomado desde el borde de la caja*/
+    text-decoration: none; /*Elimino la decoracion de textos como el subrayado en los enlaces*/
+    list-style: none; /*Elimino los 'asteriscos' de las listas*/
+}
+
+body {
+    background-color: skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.back {
+    padding: 32px 0;
+    background-color: #2A394F;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    color: #15A4F9;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #15A4F9;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+@media(max-width:991px){
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+       display: initial;
+    }
+
+    .back {
+        padding: 40px 0;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: #2A394F;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
